@@ -7,6 +7,6 @@ s.price
 # Sales is the main table because we need the sales records
 FROM Sales s
 # Join Product to get the product name
-JOIN Product p
+left JOIN Product p
 # Match rows using product_id
 ON s.product_id = p.product_id;
