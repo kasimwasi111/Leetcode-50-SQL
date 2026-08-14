@@ -21,7 +21,7 @@ ON s.machine_id = e.machine_id
 # Match records belonging to the same process
 AND s.process_id = e.process_id
 -- # Make sure s is the start record
-AND s.activity_type = 'start'
+where s.activity_type = 'start'
 -- # Make sure e is the end record
 AND e.activity_type = 'end'
 -- # Calculate the average separately for each machine
