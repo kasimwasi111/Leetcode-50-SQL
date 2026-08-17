@@ -2,7 +2,7 @@
 # Select the customer ID
 SELECT v.customer_id,
 # Count the visits where no transaction was made
-COUNT(v.visit_id) AS count_no_trans
+COUNT(*) AS count_no_trans
 # Start with Visits because we need every visit
 FROM Visits v
 # Match each visit with its transactions
