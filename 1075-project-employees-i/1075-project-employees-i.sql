@@ -1,6 +1,18 @@
-# Write your MySQL query statement below
-select p.project_id, round(avg(e.experience_years),2) as average_years
-from Project p
-left join Employee e
-on p.employee_id=e.employee_id
-group by p.project_id
+# Select each project
+SELECT 
+    p.project_id,
+    # Calculate the average experience of employees
+    # ROUND(..., 2) keeps the answer to 2 decimal places
+    ROUND(
+        AVG(e.experience_years),
+        2
+    ) AS average_years
+# Start with the Project table
+FROM Project p
+# Keep every project, even if there is no matching employee
+LEFT JOIN Employee e
+# Match the employee from Project with Employee
+ON p.employee_id = e.employee_id
+# Create one group for each project
+# AVG() will calculate the average experience separately for each project
+GROUP BY p.project_id;
