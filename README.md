@@ -19,4 +19,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1661-average-time-of-process-per-machine](https://github.com/kasimwasi111/Leetcode-50-SQL/tree/master/1661-average-time-of-process-per-machine) |
 | [1683-invalid-tweets](https://github.com/kasimwasi111/Leetcode-50-SQL/tree/master/1683-invalid-tweets) |
 | [1757-recyclable-and-low-fat-products](https://github.com/kasimwasi111/Leetcode-50-SQL/tree/master/1757-recyclable-and-low-fat-products) |
+| [1978-employees-whose-manager-left-the-company](https://github.com/kasimwasi111/Leetcode-50-SQL/tree/master/1978-employees-whose-manager-left-the-company) |
 <!---LeetCode Topics End-->
