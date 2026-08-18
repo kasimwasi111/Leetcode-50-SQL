@@ -8,7 +8,7 @@ SELECT
 # ROUND() keeps the result to 2 decimal places
     ROUND(
         IFNULL(
-            AVG(action = 'confirmed'),
+            sum(action = 'confirmed')/count(s.user_id),
             0
         ),
         2
